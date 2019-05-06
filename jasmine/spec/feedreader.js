@@ -113,14 +113,14 @@ $(function() {
         beforeEach(function(done){
            loadFeed(0,function(){
                 oldFeed = $('.feed').html();
-           });
-           loadFeed(1, function () {
-            done();
-           });
+                loadFeed(1, function () {
+                    newFeed = $('.feed').html();
+                    done();
+                });
+            });
         });
 
         it('differ from the old feed ',function(done){
-            newFeed = $('.feed').html();
             expect(newFeed).not.toEqual(oldFeed);
             done();
         });
