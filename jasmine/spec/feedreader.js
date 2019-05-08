@@ -115,14 +115,12 @@ $(function() {
                 oldFeed = $('.feed').html();
                 loadFeed(1, function () {
                     newFeed = $('.feed').html();
-                    done();
                 });
             });
         });
 
         it('differ from the old feed ',function(done){
             expect(newFeed).not.toEqual(oldFeed);
-            done();
         });
     });
 }());
