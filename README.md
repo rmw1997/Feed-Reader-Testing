@@ -1,4 +1,5 @@
-# Project Overview
+# Feed Reader Testing
+## Project Overview
 
 In this project we test a web-based application that reads RSS feeds using [Jasmine](http://jasmine.github.io/). We write a number of suits to test the logic of the application, event handling and DOM manipulation.
 
